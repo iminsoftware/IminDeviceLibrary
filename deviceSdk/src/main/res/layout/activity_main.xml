@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"></EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/getDeviceInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="getDeviceInfo" />
+        <Button
+            android:id="@+id/openCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="openCash" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="setAuto" />
+
+        <Button
+            android:id="@+id/canceAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="canceAuto" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setBaping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="setBaping" />
+
+        <Button
+            android:id="@+id/canceBaping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="canceBaping" />
+        <Button
+            android:id="@+id/canceBapingPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="setBapingPwd" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setUsbPersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="setUsbPersion" />
+
+        <Button
+            android:id="@+id/canceUsbPersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="canceUsbPersion" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setUninstall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="setUninstall" />
+
+        <Button
+            android:id="@+id/canceUninstall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="canceUninstall" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="info" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" />
+
+</LinearLayout>
