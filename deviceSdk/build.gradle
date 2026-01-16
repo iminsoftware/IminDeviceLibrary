@@ -98,8 +98,8 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.device.manager.sdk'
-                artifactId = 'library'
+                groupId = 'com.github.iminsoftware'
+                artifactId = 'IminDeviceLibrary'
                 version = 'v3.0.0'
             }
         }
