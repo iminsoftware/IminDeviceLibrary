@@ -6,7 +6,7 @@ plugins {
  * 接口版本号
  */
 ext{
-    versionCodeString = 'v3.0.0'
+    versionCodeString = '3.0.0'
     versionCodeNumber = 18
 }
 
@@ -98,9 +98,9 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.device.manager.sdk'
-                artifactId = 'library'
-                version = 'v3.0.0'
+                groupId = 'com.github.iminsoftware'
+                artifactId = 'IminDeviceLibrary'
+                version = '3.0.0'
             }
         }
     }
