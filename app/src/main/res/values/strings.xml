@@ -1,3 +1,42 @@
 <resources>
-    <string name="app_name">imindevicelibrary</string>
+    <string name="app_name">iMinDeviceLibrary</string>
+
+    <string name="device_data">Equipment Information</string>
+    <string name="hardware_device_information">Hardware device information</string>
+    <string name="get_device_model">Get device model（DEVICE_INFO_GET_MODEL）</string>
+    <string name="device_hardware_platform">Device hardware platform（DEVICE_INFO_GET_PLATFORM）</string>
+    <string name="device_brand">Equipment Brand（DEVICE_INFO_GET_BRAND）</string>
+    <string name="device_sn">Get device SN（DEVICE_INFO_GET_SN）</string>
+    <string name="device_dualscreen">Is the device a dual-screen device（DEVICE_INFO_GET_DUALSCREEN）</string>
+    <string name="network_information">Network Information</string>
+    <string name="software_information">Software Information</string>
+    <string name="device_display_information">Device display information</string>
+    <string name="device_memory_and_storage_space">Device memory and storage space</string>
+    <string name="device_memory_details">Detailed information about device memory</string>
+    <string name="device_storage_details">Detailed information about device storage space</string>
+    <string name="device_cpu_information">Information about the device CPU</string>
+
+    <string name="set_screen_sleep_time">Set screen sleep time</string>
+    <string name="write_seconds">Write seconds</string>
+    <string name="set_permissions_to_allow_floating_windows">Set permissions to allow floating windows.</string>
+    <string name="write_application_package_name">Write application package name</string>
+    <string name="set_bluetooth_name">Set Bluetooth name</string>
+    <string name="write_bluetooth_name">Write Bluetooth name</string>
+    <string name="set_virtual_bluetooth_name">Set virtual Bluetooth name</string>
+    <string name="write_virtual_bluetooth_name">Write virtual Bluetooth name</string>
+    <string name="turn_bluetooth_on_off">Turn Bluetooth on/off</string>
+    <string name="turn_wlan_on_off">Turn WLAN on/off</string>
+
+    <string name="open_cash_box">Open the cash box</string>
+    <string name="set_the_home_screen_brightness">Set the home screen brightness</string>
+    <string name="set_secondary_screen_brightness">Set secondary screen brightness</string>
+
+    <string name="set_screen_time_title">Controls whether users can configure screen timeout.</string>
+    <string name="set_screen_time_desc1">Users can configure screen timeout. screenTimeout must not be set.</string>
+    <string name="set_screen_time_desc2">The screen timeout is set to screenTimeout, and the user cannot configure the timeout. screenTimeout must be set in seconds.</string>
+
+    <string name="set_usb_permission">Set USB permissions</string>
+    <string name="write_cash_box_voltage">Write the node of the cash box voltage</string>
+    <string name="select_cash_box_voltage">Select the cash drawer voltage</string>
+
 </resources>

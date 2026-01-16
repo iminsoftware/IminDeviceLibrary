@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/device_data"
+        android:textColor="#333333"
+        android:textSize="21dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/getDeviceInfoHW"
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:layout_height="50dp"
+            android:text="@string/hardware_device_information" />
+
+
+        <!--DEVICE_INFO_GET_MODEL-->
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"
+            android:text="@string/get_device_model" />
+        <TextView
+            android:id="@+id/getModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:textSize="13sp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+
+        <!--DEVICE_INFO_GET_PLATFORM-->
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"
+            android:text="@string/device_hardware_platform" />
+        <TextView
+            android:id="@+id/getPlatform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:textSize="13sp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+
+        <!--DEVICE_INFO_GET_BRAND-->
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"
+            android:text="@string/device_brand" />
+        <TextView
+            android:id="@+id/getBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:textSize="13sp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+
+        <!--DEVICE_INFO_GET_SN-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"
+            android:text="@string/device_sn" />
+        <TextView
+            android:id="@+id/getSn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:textSize="13sp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+
+        <!--DEVICE_INFO_GET_DUALSCREEN-->
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"
+            android:text="@string/device_dualscreen" />
+        <TextView
+            android:id="@+id/dualscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:textSize="13sp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+
+
+        <TextView
+            android:id="@+id/getDeviceInfoNetInfo"
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:layout_height="50dp"
+            android:text="@string/network_information" />
+
+        <TextView
+            android:id="@+id/getDeviceInfoSW"
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:layout_height="50dp"
+            android:text="@string/software_information" />
+
+        <TextView
+            android:id="@+id/getDeviceInfoDsiplay"
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:layout_height="50dp"
+            android:text="@string/device_display_information" />
+
+        <TextView
+            android:id="@+id/getDeviceInfoMemoryInfo"
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:layout_height="50dp"
+            android:text="@string/device_memory_and_storage_space" />
+
+
+        <TextView
+            android:id="@+id/getMemoryDetailInfo"
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:layout_height="50dp"
+            android:text="@string/device_memory_details" />
+
+
+        <TextView
+            android:id="@+id/getStorageInfo"
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:layout_height="50dp"
+            android:text="@string/device_storage_details" />
+
+        <TextView
+            android:id="@+id/getCpuInfo"
+            android:layout_width="match_parent"
+            android:background="#f2f5f6"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:layout_height="50dp"
+            android:text="@string/device_cpu_information" />
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

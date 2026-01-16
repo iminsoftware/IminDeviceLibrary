@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">IminLibsDemo</string>
+    <string name="device_data">设备信息</string>
+    <string name="hardware_device_information">硬件设备信息</string>
+    <string name="get_device_model">获取设备型号（DEVICE_INFO_GET_MODEL）</string>
+    <string name="device_hardware_platform">设备的硬件平台（DEVICE_INFO_GET_PLATFORM）</string>
+    <string name="device_brand">获取设备品牌（DEVICE_INFO_GET_BRAND）</string>
+    <string name="device_sn">获取设备SN（DEVICE_INFO_GET_SN）</string>
+    <string name="device_dualscreen">设备是否为双屏（DEVICE_INFO_GET_DUALSCREEN）</string>
+    <string name="network_information">网络信息</string>
+    <string name="software_information">软件信息</string>
+    <string name="device_display_information">设备显示信息</string>
+    <string name="device_memory_and_storage_space">设备内存和存储空间</string>
+    <string name="device_memory_details">有关设备内存的详细信息</string>
+    <string name="device_storage_details">有关设备存储空间的详细信息</string>
+    <string name="device_cpu_information">有关设备CPU的信息</string>
+
+    <string name="set_screen_sleep_time">设置屏幕休眠时间</string>
+    <string name="write_seconds">写入秒数</string>
+    <string name="set_permissions_to_allow_floating_windows">设置允许悬浮窗权限</string>
+    <string name="write_application_package_name">写入应用包名</string>
+    <string name="set_bluetooth_name">设置蓝牙名称</string>
+    <string name="write_bluetooth_name">写入蓝牙名称</string>
+    <string name="set_virtual_bluetooth_name">设置虚拟蓝牙名称</string>
+    <string name="write_virtual_bluetooth_name">写入虚拟蓝牙名称</string>
+    <string name="turn_bluetooth_on_off">打开/关闭蓝牙</string>
+    <string name="turn_wlan_on_off">打开/关闭WLAN</string>
+
+    <string name="open_cash_box">打开钱箱</string>
+    <string name="set_the_home_screen_brightness">设置主屏幕亮度</string>
+    <string name="set_secondary_screen_brightness">设置副屏幕亮度</string>
+
+    <string name="set_screen_time_title">控制是否允许用户配置屏幕超时</string>
+    <string name="set_screen_time_desc1">用户可以配置屏幕超时。不得设置 screenTimeout。</string>
+    <string name="set_screen_time_desc2">屏幕超时设为 screenTimeout，且用户无法配置超时。必须设置 screenTimeout 以秒为单位</string>
+
+    <string name="set_usb_permission">设置USB权限</string>
+    <string name="write_cash_box_voltage">写入钱箱电压的节点</string>
+    <string name="select_cash_box_voltage">选择钱箱电压</string>
+
+</resources>

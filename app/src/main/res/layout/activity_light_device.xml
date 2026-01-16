@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Light Test"
+        android:textColor="#333333"
+        android:textSize="21dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--connectLightDevice-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingStart="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minWidth="200dp"
+                    android:text="Connect (连接红、绿灯)"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="end"
+                    android:text="先连接设备后再操作打开灯 \n
+                    Connect the device first, then turn on the light "
+                    android:textColor="#999999"
+                    android:textSize="13dp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/a13_connectLightDevice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="5dp"
+                    android:background="#dddddd"
+                    android:minWidth="100dp"
+                    android:text="connectLightDevice（连接设备）"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/a13_disconnectLightDevice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:background="#dddddd"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="5dp"
+                    android:gravity="center"
+                    android:minWidth="100dp"
+                    android:text="disconnectLightDevice（断开连接）"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <!--turnOnLight-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:paddingStart="20dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minWidth="200dp"
+                        android:text="TurnOn 打开红、绿灯"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:textColor="#999999"
+                        android:textSize="13dp"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/a13_turnOnGreenLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#dddddd"
+                    android:paddingStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="45dp"
+                    android:gravity="center"
+                    android:minWidth="100dp"
+                    android:text="turnOnGreenLight（打开绿灯）"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/a13_turnOnRedLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:background="#dddddd"
+                    android:paddingStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:minWidth="100dp"
+                    android:text="turnOnRedLight（打开红灯）"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <!--turnOffLight-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingStart="20dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minWidth="200dp"
+                        android:text="TurnOff 关闭灯"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:textColor="#999999"
+                        android:textSize="13dp"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/a13_turnOffLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="45dp"
+                    android:paddingStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#dddddd"
+                    android:gravity="center"
+                    android:minWidth="100dp"
+                    android:text="turnOffLight（关闭）"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

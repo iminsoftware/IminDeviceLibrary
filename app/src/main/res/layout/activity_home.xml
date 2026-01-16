@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Demo"
+        android:textColor="#333333"
+        android:textSize="21dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goToDeviceInfo"
+                android:layout_width="match_parent"
+                android:background="#f2f5f6"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"
+                android:text="@string/device_data" />
+
+            <TextView
+                android:id="@+id/goToUIControl"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="#f2f5f6"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"
+                android:text="UI control" />
+
+
+            <TextView
+                android:id="@+id/goToOemConfig"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="#f2f5f6"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"
+                android:text="oemConfig" />
+
+
+            <TextView
+                android:id="@+id/goToPeripheralPolicy"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="#f2f5f6"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"
+                android:text="peripheralConfig" />
+
+
+            <TextView
+                android:id="@+id/goToDisplaySettings"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="#f2f5f6"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"
+                android:text="displaySettings" />
+
+
+            <TextView
+                android:id="@+id/goToPsamApi"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="#f2f5f6"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"
+                android:text="Psam Test" />
+
+
+            <TextView
+                android:id="@+id/goLightDevice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="#f2f5f6"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Light" />
+
+            <TextView
+                android:id="@+id/goToA13LibsTestPage"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="#f2f5f6"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"
+                android:text="Android13 Lib" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

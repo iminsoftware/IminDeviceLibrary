@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="A13 Equipment Information"
+        android:textColor="#333333"
+        android:textSize="21dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--DEVICE_INFO_GET_MODEL-->
+            <TextView
+                style="@style/text_style_device_info_title"
+                android:text="@string/get_device_model" />
+
+            <TextView
+                android:id="@+id/a13_model"
+                style="@style/text_style_device_info_value" />
+
+            <!--getPlaform-->
+            <TextView
+                android:text="@string/device_hardware_platform"
+                style="@style/text_style_device_info_title" />
+
+            <TextView
+                android:id="@+id/a13_plaform"
+                style="@style/text_style_device_info_value" />
+
+
+            <!--getBrand-->
+            <TextView
+                style="@style/text_style_device_info_title"
+                android:text="@string/device_brand" />
+
+            <TextView
+                android:id="@+id/a13_brand"
+                style="@style/text_style_device_info_value" />
+
+
+            <!--getSn-->
+            <TextView
+                style="@style/text_style_device_info_title"
+                android:text="@string/device_sn"/>
+
+            <TextView
+                android:id="@+id/a13_sn"
+                style="@style/text_style_device_info_value" />
+
+
+            <!--getDualscreenProp-->
+            <TextView
+                style="@style/text_style_device_info_title"
+                android:text="@string/device_dualscreen" />
+
+            <TextView
+                android:id="@+id/a13_dualscreen_prop"
+                style="@style/text_style_device_info_value" />
+
+
+
+            <!--isSupperCashBox-->
+            <TextView
+                style="@style/text_style_device_info_title"
+                android:visibility="gone"
+                android:text="是否支持钱箱(DEVICE_INFO_ISSUPPERCASHBOX)"/>
+
+            <TextView
+                android:id="@+id/a13_is_supper_cashbox"
+                android:visibility="gone"
+                style="@style/text_style_device_info_value" />
+
+            <!--DEVICE_INFO_HW_INFO-->
+            <TextView
+                style="@style/text_style_device_info_title"
+                android:text="@string/hardware_device_information" />
+
+            <TextView
+                android:id="@+id/a13_hw_info"
+                style="@style/text_style_device_info_value" />
+
+
+            <!--DEVICE_INFO_CPU_INFO-->
+            <TextView
+                style="@style/text_style_device_info_title"
+                android:text="@string/device_cpu_information"/>
+
+            <TextView
+                android:id="@+id/a13_cpu"
+                style="@style/text_style_device_info_value" />
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Android13IminLibs"
+        android:textColor="#333333"
+        android:textSize="21dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--getInfo-->
+            <TextView
+                android:id="@+id/a13_get_device_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#eeeeee"
+                android:gravity="center_vertical"
+                android:minWidth="200dp"
+                android:paddingStart="20dp"
+                android:text="@string/device_data"
+                android:textSize="13dp" />
+
+
+            <!--setWifiEnable-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#eeeeee"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minWidth="200dp"
+                    android:text="@string/turn_wlan_on_off"
+                    android:textSize="13dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/a13_enable_wifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="#dddddd"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="open"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/a13_disabled_wifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#dddddd"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="close"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--setBluetoothEnable-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#eeeeee"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingStart="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minWidth="200dp"
+                    android:text="@string/turn_bluetooth_on_off"
+                    android:textSize="13dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/a13_enable_bluetooth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="#dddddd"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="open"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/a13_disabled_bluetooth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#dddddd"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="close"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--enableUSBPermission-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingStart="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minWidth="200dp"
+                    android:text="@string/set_usb_permission"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="end"
+                    android:text="@string/write_application_package_name"
+                    android:textColor="#999999"
+                    android:textSize="13dp"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#dddddd"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/a13_et_usb_package"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="com.android.chrome"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/a13_usb_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#dddddd"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="submit"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#eeeeee"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingStart="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minWidth="200dp"
+                    android:text="@string/write_cash_box_voltage"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="end"
+                    android:text="@string/select_cash_box_voltage"
+                    android:textColor="#999999"
+                    android:textSize="13dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/a13_setcashbox_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="#dddddd"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="1:9v"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/a13_setcashbox_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#dddddd"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="2:12v"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/a13_setcashbox_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#dddddd"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="3:24v"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--opencashBox-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#eeeeee"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingStart="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minWidth="200dp"
+                    android:text="@string/open_cash_box"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/a13_openCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#dddddd"
+                    android:gravity="center"
+                    android:minWidth="100dp"
+                    android:text="open"
+                    android:textSize="13dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/goLightDevice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="#eeeeee"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Light" />
+
+            <TextView
+                android:id="@+id/goToPsamApi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="#eeeeee"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Psam Test" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
