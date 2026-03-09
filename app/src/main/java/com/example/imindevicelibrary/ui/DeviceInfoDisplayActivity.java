@@ -87,7 +87,7 @@ public class DeviceInfoDisplayActivity extends AppCompatActivity implements View
                     });
                 }
             });
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

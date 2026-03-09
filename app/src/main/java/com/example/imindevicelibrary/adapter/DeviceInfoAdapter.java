@@ -1,5 +1,6 @@
 package com.example.imindevicelibrary.adapter;
 
+import android.text.TextUtils;
 import android.view.View;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -22,10 +23,11 @@ public class DeviceInfoAdapter extends BaseQuickAdapter<DeviceInfoDisplayBean, B
     @Override
     protected void convert(BaseViewHolder baseViewHolder, DeviceInfoDisplayBean deviceInfoDisplayBean) {
         baseViewHolder.setText(R.id.tvName, deviceInfoDisplayBean.name);
+        baseViewHolder.getView(R.id.tvName).setVisibility(TextUtils.isEmpty(deviceInfoDisplayBean.name) ? View.GONE:View.VISIBLE);
         if (deviceInfoDisplayBean.datas != null && deviceInfoDisplayBean.datas.size() > 0) {
             baseViewHolder.setVisible(R.id.tvValue,false);
             RecyclerView recyclerView = baseViewHolder.getView(R.id.rvItem);
-            recyclerView.setVisibility(View.GONE);
+            recyclerView.setVisibility(View.VISIBLE);
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
             DeviceInfoItemAdapter adapter = new DeviceInfoItemAdapter(deviceInfoDisplayBean.datas);
             recyclerView.setNestedScrollingEnabled(false);

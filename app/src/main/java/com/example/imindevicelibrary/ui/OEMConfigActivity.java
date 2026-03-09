@@ -32,6 +32,23 @@ public class OEMConfigActivity extends AppCompatActivity implements View.OnClick
 
     }
 
+    private void delete() {
+        JsonObject controlBean = new JsonObject();
+        JsonObject oemConfig = new JsonObject();
+        controlBean.add("oemConfig", oemConfig);
+        oemConfig.addProperty("deleteDownloadFile", "com.example.deletefile/aaa.txt");
+        try {
+            mDeviceManager.sendAMCommandAsyn(new Gson().toJson(controlBean), new IAsyncCallback.Stub() {
+                @Override
+                public void onResult(String result) throws RemoteException {
+
+                }
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     /**
      * 指定包名应用开机后启动
@@ -285,9 +302,11 @@ public class OEMConfigActivity extends AppCompatActivity implements View.OnClick
         //安装启动包名
         oemConfig.addProperty("installApkPackage","cn.wch.usbdemo");
         //传入apk路径
-        oemConfig.addProperty("installApkPath","/sdcard/usbTest.apk");
+        oemConfig.addProperty("installApkPath","/sdcard/com.example.deletefile/usbTest.apk");
         //是否安装后启动
         oemConfig.addProperty("isLaunchAfterInstallation",true);
+        //是否安装后删除apk
+        oemConfig.addProperty("isDeleteAfterInstallation",true);
 
         try {
             mDeviceManager.sendAMCommandAsyn(new Gson().toJson(controlBean), new IAsyncCallback.Stub() {
@@ -420,7 +439,7 @@ public class OEMConfigActivity extends AppCompatActivity implements View.OnClick
 
                 case R.id.install:
                     installApk();
-                    break;
+                    return;
 
                 case R.id.requestPermissionTrue:
                     requestPermission(true);
@@ -448,6 +467,7 @@ public class OEMConfigActivity extends AppCompatActivity implements View.OnClick
                 case R.id.newYork:
                     setNewYorkTime();
                     return;
+
 
             }
 

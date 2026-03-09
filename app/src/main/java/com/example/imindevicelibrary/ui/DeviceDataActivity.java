@@ -126,6 +126,7 @@ public class DeviceDataActivity extends AppCompatActivity implements View.OnClic
         binding.getMemoryDetailInfo.setOnClickListener(this);
         binding.getStorageInfo.setOnClickListener(this);
         binding.getCpuInfo.setOnClickListener(this);
+        binding.getArpInfo.setOnClickListener(this);
 
 
     }
@@ -180,7 +181,10 @@ public class DeviceDataActivity extends AppCompatActivity implements View.OnClic
                     intent.putExtra("infoTag","DEVICE_INFO_BATTERY_INFO");
                     startActivity(intent);
                     break;*/
-
+                case R.id.getArpInfo:
+                    intent.putExtra("infoTag","DEVICE_INFO_ARP");
+                    startActivity(intent);
+                    break;
             }
         } catch (Exception e) {
             e.printStackTrace();

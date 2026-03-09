@@ -2,13 +2,16 @@ package com.device.manager.sdk;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.hardware.usb.UsbDevice;
 import android.os.Build;
+import android.os.Environment;
 import android.os.IBinder;
 import android.os.RemoteException;
+import android.provider.MediaStore;
 import android.util.Log;
 
 import com.device.manager.sdk.bean.ApplicationDetail;
@@ -33,6 +36,7 @@ import com.device.manager.server.aidl.IDeviceService;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import java.io.File;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.List;
@@ -513,8 +517,56 @@ public class DeviceManager {
 
     }
 
+    /**
+     *
+     * @param path
+     * @param fileName 文件名
+     */
+    public boolean deleteSdcardDownloadFile(Context context,String path,String fileName){
+        try {
+            ContentResolver resolver = context.getContentResolver();
+            // 修改查询条件，包含相对路径
+            String selection = MediaStore.Downloads.DISPLAY_NAME + "=? AND " +
+                    MediaStore.Downloads.RELATIVE_PATH + " LIKE ?";
+            String[] selectionArgs = new String[]{fileName, "%"+path+"%"};
 
+            int deletedRows = 0;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                deletedRows = resolver.delete(
+                        MediaStore.Downloads.EXTERNAL_CONTENT_URI,
+                        selection,
+                        selectionArgs
+                );
+            }
 
+            if (deletedRows > 0) {
+                return true;
+            } else {
+                // 删除失败尝试使用原始方式
+                return deleteFileTraditional(path,fileName);
+            }
+        } catch (Exception e) {
+            return deleteFileTraditional(fileName,path);
+        }
 
+    }
+
+    private boolean deleteFileTraditional(String path,String fileName) {
+        try {
+            File downloadDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+            // 修改为包名子目录
+            File appDir = new File(downloadDir, path);
+            File file = new File(appDir, fileName);
+
+            if (file.exists()) {
+                return file.delete();
+            } else {
+                return false;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 
 }

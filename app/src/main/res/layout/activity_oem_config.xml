@@ -407,7 +407,7 @@
                         android:layout_height="35dp"
                         android:gravity="center"
                         android:minWidth="100dp"
-                        android:text="/sdcard/usbTest.apk"
+                        android:text="/sdcard/com.example.deletefile/usbTest.apk"
                         android:textSize="13dp" />
 
                     <Button
